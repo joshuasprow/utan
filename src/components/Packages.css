@@ -1,0 +1,14 @@
+.package-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 130px repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .package-wrapper {
+    grid-template-columns: 130px repeat(2, 1fr);
+  }
+}

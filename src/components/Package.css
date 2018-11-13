@@ -1,0 +1,49 @@
+.package h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.package h4 {
+  color: hsl(354, 80%, 62%);
+  margin-top: 0;
+}
+.package ul {
+  list-style: none;
+  padding: 0;
+}
+.package li {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.package li::before {
+  content: '$';
+}
+.package.labels li::before {
+  content: '';
+}
+.package li:nth-of-type(2n - 1) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.package.labels:nth-of-type(2n) {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  .package.labels:nth-of-type(2n) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 520px) {
+  .package {
+    font-size: 0.7rem;
+  }
+}
+.package.labels li {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  height: 38px;
+}

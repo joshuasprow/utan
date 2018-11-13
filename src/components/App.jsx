@@ -5,6 +5,7 @@ import AboutUs from './AboutUs.jsx';
 import './App.css';
 import Banner from './Banner.jsx';
 import Locations from './Locations.jsx';
+import Packages from './Packages';
 import Specials from './Specials.jsx';
 
 export default () => (
@@ -12,6 +13,7 @@ export default () => (
     <Banner />
     <Locations />
     <Specials title="Specials" image={palms} />
+    <Packages />
     <AboutUs
       title="About Us"
       content={

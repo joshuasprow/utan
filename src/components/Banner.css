@@ -1,0 +1,18 @@
+.banner {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  height: 100vh;
+
+  background-image: url('../img/waves.svg');
+  background-size: cover;
+  box-shadow: 0 2px 8px #111;
+}
+.banner-logo {
+  width: 30em;
+  max-width: 90%;
+
+  filter: drop-shadow(8px 8px 8px #111);
+}
